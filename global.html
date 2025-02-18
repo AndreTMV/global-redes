@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Routing</title>
+    <style>
+        /* Diseño Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4A90E2;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #34495e;
+            margin: 15px 0;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f8f8f8;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        /* Imagen */
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Secciones */
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ecf0f1;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Enlaces */
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Notas */
+        .note {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 5px solid #4A90E2;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .note p {
+            margin: 0;
+        }
+
+        .name {
+            font-size: 1em;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            color: #2c3e50;
+            margin-bottom: .5px; /* Reducir el espacio entre los nombres */
+        }
+
+        .name span {
+            font-size: 0.9em; /* Reducir el tamaño del número */
+            color: #4A90E2;
+            float: right; /* Mover hacia la derecha */
+            margin-left: 10px; /* Espacio entre nombre y número */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="name">Minerva Araceli Rivera Arias <span>24310141</span></p>
+        <p class="name">André Thot Mejía Valenzuela <span>24310147</span></p>
+        <h1>Resumen de Routing</h1>
+        <div class="section">
+            <h2>Unidad 1: Conceptos de Routing</h2>
+
+            <h3>1.1 Configuración inicial del router</h3>
+
+            <h4>1.1.1 Funciones del router</h4>
+            <p>Un router es un dispositivo clave en redes que permite la comunicación entre diferentes redes. Sus funciones principales incluyen:</p>
+            <ul>
+                <li><strong>Interconexión de redes:</strong> Conecta redes LAN y WAN.</li>
+                <li><strong>Envío de paquetes:</strong> Decide la mejor ruta para enviar datos.</li>
+                <li><strong>Seguridad:</strong> Filtra tráfico no autorizado mediante firewalls y listas de control de acceso (ACL).</li>
+            </ul>
+
+            <h4>1.1.2 Conectar los dispositivos</h4>
+            <p>Para que un router funcione correctamente, debe estar conectado a:</p>
+            <ul>
+                <li><strong>Dispositivos LAN:</strong> Computadoras, impresoras, switches.</li>
+                <li><strong>Dispositivos WAN:</strong> Módems o enlaces a internet.</li>
+                <li><strong>Otros routers:</strong> Para extender la red.</li>
+            </ul>
+
+            <h4>1.1.3 Configuración básica del router</h4>
+            <p>Pasos para configurar un router:</p>
+            <ol>
+                <li>Acceder a la interfaz administrativa (usando una IP como 192.168.1.1).</li>
+                <li>Asignar direcciones IP a las interfaces.</li>
+                <li>Habilitar protocolos como DHCP para asignar IPs automáticamente.</li>
+                <li>Configurar contraseñas para seguridad.</li>
+            </ol>
+
+            <h4>1.1.4 Verificación de la conectividad</h4>
+            <p>Herramientas útiles:</p>
+            <ul>
+                <li><code>ping</code>: Verifica si un dispositivo está accesible.</li>
+                <li><code>traceroute</code>: Muestra la ruta que toman los paquetes.</li>
+                <li><code>show ip interface brief</code>: Muestra el estado de las interfaces.</li>
+            </ul>
+
+            <img class="image" src="router_setup.jpg" alt="Configuración del router">
+
+            <h3>1.2 Decisiones de Routing</h3>
+
+            <h4>1.2.1 Switching de paquetes entre redes</h4>
+            <p>El router recibe paquetes y decide si deben enviarse a otra red o permanecer en la misma. Esto se basa en:</p>
+            <ul>
+                <li><strong>Dirección IP de destino:</strong> Para identificar la red de destino.</li>
+                <li><strong>Tabla de routing:</strong> Para determinar la mejor ruta.</li>
+            </ul>
+
+            <h4>1.2.2 Determinación de ruta</h4>
+            <p>El router usa métricas como:</p>
+            <ul>
+                <li><strong>Número de saltos:</strong> Cuántos routers debe atravesar.</li>
+                <li><strong>Ancho de banda:</strong> La velocidad del enlace.</li>
+                <li><strong>Retardo:</strong> Tiempo que tarda en llegar.</li>
+            </ul>
+
+            <h3>1.3 Funcionamiento del Router</h3>
+
+            <h4>1.3.1 Análisis de la tabla de routing</h4>
+            <p>La tabla de routing contiene:</p>
+            <ul>
+                <li><strong>Redes conocidas:</strong> Direcciones IP de redes accesibles.</li>
+                <li><strong>Interfaces de salida:</strong> Por dónde enviar los paquetes.</li>
+            </ul>
+
+            <h4>1.3.2 Rutas conectadas directamente</h4>
+            <p>Son redes a las que el router está físicamente conectado. No requieren configuración adicional.</p>
+
+            <h4>1.3.3 Rutas descubiertas estáticamente</h4>
+            <p>Configuradas manualmente por un administrador. Ejemplo:</p>
+            <pre>
+                ip route 192.168.2.0 255.255.255.0 192.168.1.1
+            </pre>
+
+            <h4>1.3.4 Protocolos de routing dinámico</h4>
+            <p>Los más comunes son:</p>
+            <ul>
+                <li><strong>RIP:</strong> Fácil de configurar, ideal para redes pequeñas.</li>
+                <li><strong>OSPF:</strong> Rápido y eficiente, para redes grandes.</li>
+                <li><strong>EIGRP:</strong> Propietario de Cisco, combina lo mejor de RIP y OSPF.</li>
+            </ul>
+        </div>
+
+        <!-- Unidad 2: Routing Estático -->
+        <div class="section">
+            <h2>Unidad 2: Routing Estático</h2>
+
+            <h3>2.1 Implementación de Rutas Estáticas</h3>
+
+            <h4>2.1.1 Routing estático</h4>
+            <p>El routing estático es ideal para redes pequeñas o cuando las rutas no cambian con frecuencia. Ventajas:</p>
+            <ul>
+                <li><strong>Control total:</strong> El administrador define las rutas.</li>
+                <li><strong>Seguridad:</strong> No hay riesgo de rutas no deseadas.</li>
+            </ul>
+
+            <h4>2.1.1.1 Alcance de las redes remotas</h4>
+            <p>Se usa para conectar redes que no están directamente conectadas. Ejemplo:</p>
+            <pre>
+                ip route 10.0.0.0 255.255.255.0 192.168.1.1
+            </pre>
+
+            <h4>2.1.1.2 Utilizar el routing estático</h4>
+            <p>Es útil en:</p>
+            <ul>
+                <li>Redes pequeñas.</li>
+                <li>Enlaces punto a punto.</li>
+                <li>Escenarios donde se requiere control absoluto.</li>
+            </ul>
+
+            <h4>2.1.1.3 Usar rutas estáticas</h4>
+            <p>Pasos para configurar:</p>
+            <ol>
+                <li>Identificar la red de destino.</li>
+                <li>Especificar el siguiente salto.</li>
+                <li>Agregar la ruta a la tabla de routing.</li>
+            </ol>
+
+            <h3>2.1.2 Tipos de rutas estáticas</h3>
+
+            <h4>2.1.2.1 Aplicaciones de las rutas estáticas</h4>
+            <p>Se usan en:</p>
+            <ul>
+                <li>Redundancia: Rutas de respaldo.</li>
+                <li>Control de tráfico: Enrutar tráfico específico.</li>
+            </ul>
+
+            <h4>2.1.2.2 Ruta estática estándar</h4>
+            <p>Para una red específica:</p>
+            <pre>
+                ip route 192.168.2.0 255.255.255.0 192.168.1.1
+            </pre>
+
+            <h4>2.1.2.3 Ruta estática por defecto</h4>
+            <p>Para tráfico desconocido:</p>
+            <pre>
+                ip route 0.0.0.0 0.0.0.0 192.168.1.1
+            </pre>
+
+            <h4>2.1.2.4 Ruta estática resumida</h4>
+            <p>Agrupa varias redes en una sola ruta:</p>
+            <pre>
+                ip route 192.168.0.0 255.255.0.0 192.168.1.1
+            </pre>
+
+            <h4>2.1.2.5 Ruta estática flotante</h4>
+            <p>Ruta de respaldo con mayor distancia administrativa:</p>
+            <pre>
+                ip route 192.168.2.0 255.255.255.0 192.168.1.2 10
+            </pre>
+
+            <h3>2.2 Configuración de Rutas Estáticas y Predeterminadas</h3>
+
+            <h4>2.2.1 Configuración de rutas estáticas IPv4</h4>
+            <p>Ejemplo:</p>
+            <pre>
+                ip route 192.168.2.0 255.255.255.0 192.168.1.1
+            </pre>
+
+            <h4>2.2.2 Configuración de rutas predeterminadas IPv4</h4>
+            <p>Para enviar tráfico desconocido:</p>
+            <pre>
+                ip route 0.0.0.0 0.0.0.0 192.168.1.1
+            </pre>
+
+            <h4>2.2.3 Configuración de rutas estáticas IPv6</h4>
+            <p>Ejemplo:</p>
+            <pre>
+                ipv6 route 2001:db8::/64 2001:db8:0:1::1
+            </pre>
+
+            <h4>2.2.4 Configuración de rutas estáticas IPv6 predeterminadas</h4>
+            <p>Para tráfico desconocido en IPv6:</p>
+            <pre>
+                ipv6 route ::/0 2001:db8::1
+            </pre>
+
+            <h4>2.2.5 Configuración de rutas estáticas flotantes</h4>
+            <p>Ruta de respaldo con distancia administrativa:</p>
+            <pre>
+                ip route 192.168.5.0 255.255.255.0 192.168.1.1 10
+            </pre>
+
+            <h4>2.2.6 Configurar rutas de host estáticas</h4>
+            <p>Para un solo dispositivo:</p>
+            <pre>
+                ip route 192.168.1.100 255.255.255.255 192.168.1.1
+            </pre>
+
+            <h3>2.3 Resolución de Problemas de Rutas Estáticas y Predeterminadas</h3>
+
+            <h4>2.3.1 Procesamiento de paquetes con rutas estáticas</h4>
+            <p>El router verifica la tabla de routing y decide por dónde enviar los paquetes. Si no encuentra una ruta, descarta el paquete.</p>
+
+            <h4>2.3.2 Resolución de problemas de configuración de rutas estáticas y predeterminadas IPv4</h4>
+            <p>Pasos para solucionar problemas:</p>
+            <ol>
+                <li>Verificar la tabla de routing con <code>show ip route</code>.</li>
+                <li>Comprobar la conectividad con <code>ping</code>.</li>
+                <li>Revisar las interfaces con <code>show ip interface brief</code>.</li>
+                <li>Verificar la configuración de las rutas estáticas.</li>
+            </ol>
+
+            <img class="image" src="static_routes.jpg" alt="Routing estático">
+        </div>
+
+        <!-- Unidad 3: Routing Dinámico -->
+        <div class="section">
+            <h2>Unidad 3: Routing Dinámico</h2>
+
+            <h3>3.1 Protocolos de Routing Dinámico</h3>
+
+            <h4>3.1.1 Descripción general del protocolo de routing dinámico</h4>
+            <p>Los protocolos de routing dinámico permiten que los routers intercambien información automáticamente y actualicen sus tablas de routing. Los más comunes son:</p>
+            <ul>
+                <li><strong>RIP:</strong> Fácil de configurar, ideal para redes pequeñas.</li>
+                <li><strong>OSPF:</strong> Rápido y eficiente, para redes grandes.</li>
+                <li><strong>EIGRP:</strong> Propietario de Cisco, combina lo mejor de RIP y OSPF.</li>
+            </ul>
+
+            <h3>3.2 Comparación entre Routing Dinámico y Estático</h3>
+            <p>El routing dinámico es más flexible y se adapta a cambios en la red, mientras que el routing estático es más seguro y predecible, pero requiere intervención manual.</p>
+
+            <h3>3.2 RIPv2</h3>
+            <p>RIPv2 es un protocolo de routing dinámico basado en el número de saltos. Es fácil de configurar y soporta redes de longitud variable.</p>
+
+            <h4>3.2.1 Configuración del Protocolo RIP</h4>
+            <p>Para configurar el protocolo RIP v2 en un router Cisco, sigue estos pasos:</p>
+            <ol>
+                <li>Acceder al modo de configuración global.</li>
+                <li>Habilitar RIP v2:</li>
+                <pre>
+                    router rip
+                    version 2
+                </pre>
+                <li>Especificar las redes que se anunciarán:</li>
+                <pre>
+                    network 192.168.1.0
+                    network 192.168.2.0
+                </pre>
+                <li>Guardar la configuración.</li>
+            </ol>
+
+            <h3>3.3 La Tabla de Routing</h3>
+
+            <h4>3.3.1 Partes de una Entrada de Ruta IPv4</h4>
+            <p>Una entrada en la tabla de routing IPv4 consta de los siguientes elementos:</p>
+            <ul>
+                <li><strong>Destino:</strong> La red o dirección IP de destino.</li>
+                <li><strong>Máscara de subred:</strong> Define el rango de la red de destino.</li>
+                <li><strong>Próximo salto:</strong> Dirección IP del router siguiente en la ruta.</li>
+                <li><strong>Interfaz de salida:</strong> La interfaz del router que se utiliza para enviar los paquetes.</li>
+                <li><strong>Métrica:</strong> Valor utilizado para determinar la mejor ruta.</li>
+            </ul>
+
+            <h4>3.3.2 Rutas IPv4 Descubiertas en Forma Dinámica</h4>
+            <p>Las rutas dinámicas se descubren automáticamente a través de protocolos de routing, como RIP, OSPF o EIGRP. Estas rutas se agregan a la tabla de routing sin intervención manual.</p>
+            <p>Para ver las rutas dinámicas en la tabla de routing, usa el siguiente comando:</p>
+            <pre>
+                show ip route
+            </pre>
+
+            <h4>3.3.3 Proceso de Búsqueda de Rutas IPv4</h4>
+            <p>Cuando un router recibe un paquete, sigue este proceso para determinar cómo enrutarlo:</p>
+            <ol>
+                <li>Busca en su tabla de routing la mejor coincidencia con la dirección de destino.</li>
+                <li>Si encuentra una coincidencia, envía el paquete por la interfaz correspondiente.</li>
+                <li>Si no hay coincidencia, el paquete se descarta o se redirige a una ruta por defecto.</li>
+            </ol>
+
+            <h4>3.3.4 Análisis de una Tabla de Routing IPv6</h4>
+            <p>La tabla de routing IPv6 es similar a la IPv4, pero con algunas diferencias debido a la estructura de las direcciones IPv6. Cada entrada contiene:</p>
+            <ul>
+                <li><strong>Destino:</strong> Dirección de red IPv6 de destino.</li>
+                <li><strong>Próximo salto:</strong> Dirección IPv6 del siguiente router en la ruta.</li>
+                <li><strong>Interfaz de salida:</strong> Interfaz a través de la cual se envía el paquete.</li>
+                <li><strong>Métrica:</strong> Valor que indica la preferencia de la ruta.</li>
+            </ul>
+            <p>Para ver la tabla de routing IPv6, utiliza:</p>
+            <pre>
+                show ipv6 route
+            </pre>
+        </div>
+    </body>
+</html>
